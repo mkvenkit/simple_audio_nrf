@@ -6,3 +6,4 @@ project(my_zephyr_app)
 # find_package(Zephyr) which defines the target.
 target_sources(app PRIVATE src/main.c)
 target_sources(app PRIVATE src/loopback.c)
+#target_sources(app PRIVATE src/i2s_mic.c)
