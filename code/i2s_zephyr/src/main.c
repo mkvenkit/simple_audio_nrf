@@ -11,6 +11,7 @@
 #include <logging/log.h>
 LOG_MODULE_REGISTER(i2s_zephyr, LOG_LEVEL_INF);
 
+#include <arm_math.h>
 
 // enable for I2S loopback test 
 #define LOOPBACK_TEST
@@ -18,6 +19,8 @@ LOG_MODULE_REGISTER(i2s_zephyr, LOG_LEVEL_INF);
 #ifdef LOOPBACK_TEST
 #include "loopback.h"
 #endif
+
+#include "cmsis_dsp_test.h"
 
 void main(void)
 {
@@ -32,6 +35,7 @@ void main(void)
                                                                                                                        
     uart_poll_out(dev, 'A'); 
 
+    cmsis_dsp_test();
 
     // main loop 
     for(;;) {
