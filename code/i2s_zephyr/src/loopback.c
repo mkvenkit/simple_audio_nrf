@@ -188,7 +188,7 @@ void loopback_init()
     config.ratio     = NRF_I2S_RATIO_96X;
     config.channels  = NRF_I2S_CHANNELS_STEREO;
 
-    IRQ_DIRECT_CONNECT(I2S_IRQn, 0,i2s_isr_handler, 0);
+    IRQ_DIRECT_CONNECT(I2S0_IRQn, 0,i2s_isr_handler, 0);
 
     int err_code = nrfx_i2s_init(&config, data_handler);
 
