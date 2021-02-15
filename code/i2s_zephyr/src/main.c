@@ -13,7 +13,7 @@
 #include <logging/log.h>
 LOG_MODULE_REGISTER(i2s_zephyr, LOG_LEVEL_INF);
 
-#include <arm_math.h>
+#include "cmsis_nn_test.h"
 
 // enable for I2S loopback test 
 //#define LOOPBACK_TEST
@@ -48,6 +48,8 @@ void main(void)
 
     //cmsis_dsp_test();
 
+    cmsis_nn_test();
+    
     // main loop 
     for(;;) {
 
