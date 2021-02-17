@@ -28,6 +28,8 @@ target_sources(app PRIVATE ${CMSIS_NN_SRC_DIR}/ActivationFunctions/arm_nn_activa
 target_sources(app PRIVATE ${CMSIS_NN_SRC_DIR}/ActivationFunctions/arm_relu_q7.c)
 target_sources(app PRIVATE ${CMSIS_NN_SRC_DIR}/ConvolutionFunctions/arm_convolve_HWC_q7_fast.c)
 target_sources(app PRIVATE ${CMSIS_NN_SRC_DIR}/ConvolutionFunctions/arm_convolve_HWC_q7_RGB.c)
+target_sources(app PRIVATE ${CMSIS_NN_SRC_DIR}/ConvolutionFunctions/arm_convolve_HWC_q7_basic.c)
+target_sources(app PRIVATE ${CMSIS_NN_SRC_DIR}/NNSupportFunctions/arm_q7_to_q15_no_shift.c)
 target_sources(app PRIVATE ${CMSIS_NN_SRC_DIR}/FullyConnectedFunctions/arm_fully_connected_q7.c)
 target_sources(app PRIVATE ${CMSIS_NN_SRC_DIR}/FullyConnectedFunctions/arm_fully_connected_q7_opt.c)
 target_sources(app PRIVATE ${CMSIS_NN_SRC_DIR}/PoolingFunctions/arm_pool_q7_HWC.c)

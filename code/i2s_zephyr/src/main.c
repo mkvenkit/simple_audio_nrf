@@ -34,9 +34,9 @@ void main(void)
     loopback_init();
 #endif
 
-    i2s_mic_init();
+    //i2s_mic_init();
 
-    i2s_mic_test();
+    //i2s_mic_test();
 
 
     //struct device* dev = device_get_binding("GPIO_0");
@@ -49,7 +49,7 @@ void main(void)
     //cmsis_dsp_test();
 
     cmsis_nn_test();
-    
+
     // main loop 
     for(;;) {
 
